@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewData["Title"] = "SearchResultTitle";
+}
+@model IEnumerable<MovieAppSearch.Models.Movie>
+
+<h1>Search Result Title</h1>
+
+<table class="table table-bordered table-active  table-striped table-hover table-dark"   >
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Gener</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach(var movie in Model)
+            {
+                <tr>
+                    <td>@movie.Title</td>
+                    <td>@movie.Genre</td>
+                </tr>
+            }
+    </tbody>
+
+</table>
+
+
